@@ -79,7 +79,7 @@ a_3 = sigmoid(z_3);
 
 y_k = full(sparse(1:numel(y), y,1))';
 
-J = sum(-1/m*sum((y_k.*log(a_3)+(1-y_k).*log(1-a_3)))) + (lambda/(2*m))*(sum(sum(Theta1(:,2:end).^2))+ sum(sum(Theta2(:,2:end).^2)))
+J = sum(-1/m*sum((y_k.*log(a_3)+(1-y_k).*log(1-a_3)))) + (lambda/(2*m))*(sum(sum(Theta1(:,2:end).^2))+ sum(sum(Theta2(:,2:end).^2)));
 
 
 
